@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
 body {
 	display: grid;
 	justify-content: center;
 	text-align: center;
 	height: 100vh;
 	background-color: aqua;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-		sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 hr {
@@ -14,11 +15,11 @@ hr {
 }
 
 h1 {
-	font-weight: bold;
+	font-weight: 900;
 }
 
 tr {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .button {
