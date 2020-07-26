@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- <link ref="stylesheet" href="bootstrap.css"> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" id="card">
+            <div class="card-body">
+                
+                <div class="card-title">
+                    <h3 class="display-2 text-center">Car Park</h3>
+                </div>
+                
+                <hr>
+
+                <div class="card-text">
+                    
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <td>Vehicle Type</td>
+                                <td>Parking Price</td>
+                                <td>Entered</td>
+                                <td>Number of Cars Parked</td>
+                                <td>Exited</td>
+                                <td>Cash Collected</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Cars</td>
+                                <td>Rs. 100</td>
+                                
+                                <td>
+                                    <button id="carInc" class="btn btn-success button"> + </button>
+                                </td>
+                                
+                                <td id="carNum">0</td>
+                                
+                                <td>
+                                    <button id="carDec" class="btn btn-success button"> - </button>
+                                </td>
+                                
+                                <td id="carCash">0</td>
+                            </tr>
+
+                             <tr>
+                                <td>Buses</td>
+                                <td>Rs. 300</td>
+                                
+                                <td>
+                                    <button id="busInc" class="btn btn-success button"> + </button>
+                                </td>
+                                
+                                <td id="busNum">0</td>
+                                
+                                <td>
+                                    <button id="busDec" class="btn btn-success button"> - </button>
+                                </td>
+
+                                <td id="busCash">0</td>
+                            </tr>
+
+                             <tr>
+                                <td>Wagons</td>
+                                <td>Rs. 400</td>
+                                <td>
+                                    <button id="wagonInc" class="btn btn-success button"> + </button>
+                                </td>
+
+                                <td id="wagonNum">0</td>
+
+                                <td>
+                                    <button id="wagonDec" class="btn btn-success button"> - </button>
+                                </td>
+
+                                <td id="wagonCash">0</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <table class="table table-bordered">
+
+                        <thead>
+                            <tr>
+                                <td>Parking Capacity</td>
+                                <td>Total Vehicles Parked Currently</td>
+                                <td>Total Cash</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td id="currentVehicleTotal">0</td>
+                                <td id="cashTotal">0</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <table class="table table-bordered">
+
+                        <thead>
+                            <tr>
+                                <td>Total Cars Parked Today</td>
+                                <td>Total Buses Parked Today</td>
+                                <td>Total Wagons Parked Today</td>
+                                <td>Total Vehicles Parked Today</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td id="totalCars">0</td>
+                                <td id="totalBuses">0</td>
+                                <td id="totalWagons">0</td>
+                                <td id="vehicleTotal">0</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <button class="btn btn-danger" id="reset">Reset</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
